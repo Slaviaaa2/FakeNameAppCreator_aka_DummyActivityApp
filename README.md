@@ -1,0 +1,2 @@
+# FakeNameAppCreator_aka_DummyActivityApp
+偽アプリで遊んでると思わせましょう
