@@ -1,0 +1,22 @@
+﻿<Window x:Class="DummyActivityApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DummyActivityApp"
+        mc:Ignorable="d"
+        Title="FakeAppNameCreator" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="747*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="applicationNameInput" HorizontalAlignment="Left" Margin="208,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" Height="55" TextChanged="TextBox_TextChanged" FontSize="35" Grid.Column="1"/>
+        <TextBlock x:Name="SenderUserGuide" HorizontalAlignment="Left" Margin="27,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.75,-1.701" Height="49" Width="229" FontSize="35" TextAlignment="Center" Grid.ColumnSpan="2"><Run Text="偽装アプリ名"/><Run Language="ja-jp" Text="："/></TextBlock>
+        <Button x:Name="AppNameSender" Grid.Column="1" Content="決定" HorizontalAlignment="Left" Margin="556,31,0,0" VerticalAlignment="Top" Height="55" Width="172" Click="Button_Click" FontSize="35"/>
+        <TextBox x:Name="ICOdirInput" HorizontalAlignment="Left" Margin="207,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="344" Height="55" FontSize="35" Grid.Column="1" Text="D:/FANC_Assets/ICOs" TextChanged="saveICOdir"/>
+        <TextBlock x:Name="ICOdirGuide" HorizontalAlignment="Left" Margin="10,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.75,-1.701" Height="49" Width="246" FontSize="35" TextAlignment="Center" Grid.ColumnSpan="2"><Run Language="ja-jp" Text="ICOディレクトリ："/></TextBlock>
+        <Button x:Name="OpenICOdir" Grid.Column="1" Content="作成&amp;開く" HorizontalAlignment="Left" Margin="556,113,0,0" VerticalAlignment="Top" Height="55" Width="172" Click="OpenDirectry" FontSize="35"/>
+
+    </Grid>
+</Window>
